@@ -56,9 +56,6 @@ App Store (only macos untill now):
        title="Download iOS version from App Store" 
        style="width:240px;height:80px;">
 </a>
-<video src="https://github.com/DMR-Database/.github/raw/refs/heads/main/dmr%20user%20database%20-%20macos.mp4" controls="controls" width="600">
-  Your browser does not support the video tag.
-</video>
 <br>
 Others (thru Google Drive):
 <br>
@@ -74,6 +71,10 @@ Others (thru Google Drive):
        title="Download macOS version from Google Drive" 
        style="width:240px;height:80px;">
 </a>
+<br>
+<video src="https://github.com/DMR-Database/.github/raw/refs/heads/main/dmr%20user%20database%20-%20macos.mp4" controls="controls" width="600">
+  Your browser does not support the video tag.
+</video>
 
 
 <!--

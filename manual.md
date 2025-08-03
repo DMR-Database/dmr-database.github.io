@@ -530,6 +530,7 @@ If you've completed the fox hunt and earned winner status, your progress is pres
 The app supports multiple languages with complete translations:
 - **English (en-us)**: Default language
 - **German (de-de)**: Deutsche Sprache
+- **Greek (el-gr)**: Greek
 - **Spanish (es-es)**: Idioma Español
 - **French (fr-fr)**: Langue Française
 - **Dutch (nl-nl)**: Nederlandse Taal

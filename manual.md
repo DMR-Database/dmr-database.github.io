@@ -527,15 +527,15 @@ If you've completed the fox hunt and earned winner status, your progress is pres
   - Persistent storage across app sessions
 
 #### Language Selection
-The app supports multiple languages with complete translations:
-- **English (en-us)**: Default language
-- **German (de-de)**: Deutsche Sprache
-- **Spanish (es-es)**: Idioma Español
-- **French (fr-fr)**: Langue Française
-- **Dutch (nl-nl)**: Nederlandse Taal
-- **Chinese**: Traditional and Simplified variants
-- **Japanese**: Full Japanese translation
-- **Additional Languages**: Continuously expanding
+The app supports 8 languages with complete translations:
+- **English (en-us)**: Default language - English
+- **Dutch (nl-nl)**: Nederlands
+- **German (de-de)**: Deutsch
+- **Greek (el-gr)**: Ελληνικά
+- **Spanish (es-es)**: Español
+- **French (fr-fr)**: Français
+- **Chinese (cn-cn)**: 中文
+- **Japanese (jp-jp)**: 日本語
 
 **Language Features**:
 - **Dynamic Switching**: Changes take effect immediately

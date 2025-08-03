@@ -66,7 +66,7 @@ Download the DMR User Database app today and keep the global DMR community acces
 
 **Direct Download (Google Drive):**
 
-<a href="https://drive.google.com/file/d/1phdBYsV0bFWFn_FGd5cigQKR5XkQFmrK/view?usp=drive_link" target="_blank">
+<a href="https://drive.google.com/file/d/16FfKLE_m_e2ssGZnG2hyQJ1Zp1qSwUh7/view?usp=sharing" target="_blank">
   <img src="https://raw.githubusercontent.com/DMR-Database/dmr-database-appdata/refs/heads/main/dl-windows.png"
        alt="Download Windows version from Google Drive"
        title="Download Windows version from Google Drive"

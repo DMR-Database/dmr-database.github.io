@@ -690,7 +690,6 @@ For users with special circumstances:
 - **Share Function**: Use system sharing to send single records
 - **Format Options**: Plain text, formatted text, or structured data
 - **Destinations**: Email, messaging, social media, or file storage
-- **QR Code Generation**: Create QR codes for contact information
 
 #### Bulk Database Export
 Available on desktop platforms (Windows, macOS, Linux):

@@ -48,7 +48,7 @@ The app runs on:
 ### Key Benefits
 - **Offline-First Design**: Full functionality without internet connection
 - **Cross-Platform Synchronization**: Same experience across all devices
-- **Multi-Language Support**: Available in 10+ languages
+- **Multi-Language Support**: Available in 8 languages
 - **Regular Database Updates**: Automatic synchronization with latest data
 - **Amateur Radio Integration**: Direct links to QRZ.com and other services
 - **Gamification**: Fox Hunt system encourages exploration
@@ -125,7 +125,7 @@ The app uses a bottom navigation bar with six main sections:
 ### 5. Settings Screen
 - **User Configuration**: Personal settings and preferences
 - **Theme Selection**: Light, Dark, and Auto modes
-- **Language Options**: 10+ supported languages
+- **Language Options**: 8 supported languages
 - **Advanced Features**: Beta features and developer options
 - **Fox Hunt Progress**: Track completion status of all 10 Fox Hunt Easter Eggs
 
@@ -135,6 +135,7 @@ The app uses a bottom navigation bar with six main sections:
 - **Support Resources**: Help and documentation links
 - **Community Links**: Amateur radio related websites
 - **Privacy Policy**: Data handling and privacy information
+- **Beta Testers Recognition**: Special screen acknowledging 24+ international beta testers
 
 ## Search Functionality
 
@@ -664,9 +665,9 @@ For users with special circumstances:
 
 #### Credits and Attribution
 - **Primary Developer**: PD2EMC development credit
+- **Beta Testing Community**: Recognition of 24+ beta testers from around the world
 - **Data Sources**: Attribution to database providers
 - **Open Source Components**: Recognition of open source libraries
-- **Beta Testers**: Recognition of testing community
 - **Contributors**: Amateur radio community contributions
 
 #### Legal Information
@@ -689,7 +690,6 @@ For users with special circumstances:
 - **Share Function**: Use system sharing to send single records
 - **Format Options**: Plain text, formatted text, or structured data
 - **Destinations**: Email, messaging, social media, or file storage
-- **QR Code Generation**: Create QR codes for contact information
 
 #### Bulk Database Export
 Available on desktop platforms (Windows, macOS, Linux):

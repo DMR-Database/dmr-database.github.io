@@ -530,7 +530,6 @@ If you've completed the fox hunt and earned winner status, your progress is pres
 The app supports multiple languages with complete translations:
 - **English (en-us)**: Default language
 - **German (de-de)**: Deutsche Sprache
-- **Greek (el-gr)**: Greek
 - **Spanish (es-es)**: Idioma Español
 - **French (fr-fr)**: Langue Française
 - **Dutch (nl-nl)**: Nederlandse Taal
@@ -690,6 +689,7 @@ For users with special circumstances:
 - **Share Function**: Use system sharing to send single records
 - **Format Options**: Plain text, formatted text, or structured data
 - **Destinations**: Email, messaging, social media, or file storage
+- **QR Code Generation**: Create QR codes for contact information
 
 #### Bulk Database Export
 Available on desktop platforms (Windows, macOS, Linux):
@@ -1023,9 +1023,53 @@ When reporting bugs, include:
 - **Bulk**: Full database export (desktop only)
 - **Radio Programming**: Anytone, CHIRP, Pi-Star formats
 
+## Additional Advanced Features
+
+### DMR Audio Streaming
+- **BrandMeister Integration**: Listen to DMR networks through Hoseline
+- **Real-time Audio**: Stream live DMR traffic from BrandMeister network
+- **Network Selection**: Access different BrandMeister servers globally
+- **Audio Controls**: Volume and quality settings for optimal listening
+
+### Advanced Settings Features
+The Settings screen contains several advanced features accessible through user configuration:
+
+#### Maps Integration
+- **RadioID Repeater Map**: Interactive map showing DMR repeater locations from RadioID database
+- **RepeaterBook Map**: Alternative repeater database with comprehensive coverage information  
+- **Hackerspaces Map**: Global map of amateur radio hackerspaces and clubs
+- **Map Controls**: Zoom, pan, location services, marker clustering, and offline caching
+
+#### Links Management
+- **Personal Links**: Manage your own collection of amateur radio websites and resources
+- **Category Organization**: Organize links by type, band, or interest area
+- **Quick Access**: Fast access to frequently used amateur radio resources
+- **Import/Export**: Share useful link collections with other operators
+
+#### Advanced Database Features
+- **Database Maintenance**: Repair, optimize, and check database integrity
+- **Update Management**: Control automatic updates and manual refresh options
+- **Storage Analytics**: Monitor database size and storage usage
+- **Backup Systems**: Automatic backup during database updates
+
+### Platform-Specific Feature Details
+
+#### Desktop Platforms (Windows, macOS, Linux)
+- **Bulk Database Export**: Export entire databases for radio programming software
+- **Advanced File Management**: Full file system access for exports and backups
+- **Multiple Format Support**: CSV, JSON, XML, and radio-specific formats
+- **CHIRP Integration**: Direct export for CHIRP radio programming software
+- **Performance Optimization**: Better performance for large database operations
+
+#### Web Platform Limitations
+- **Database Engine**: Uses Sembast instead of SQLite for browser compatibility
+- **Storage Constraints**: Browser storage limitations affect large database operations
+- **Reduced Functionality**: Some advanced features unavailable in web version
+- **Internet Dependency**: More reliant on internet connection than native apps
+
 ---
 
-**Version**: 1.0.20250729+150
+**Version**: 1.0.20250802+157
 **Last Updated**: August 2025
 **Developer**: PD2EMC
 **Support**: Available through in-app contact form

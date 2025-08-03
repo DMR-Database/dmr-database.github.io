@@ -93,6 +93,8 @@ Download the DMR User Database app today and keep the global DMR community acces
 
 [DMR-Database GitHub Repository](https://github.com/DMR-Database)
 
+[manual](manual.md)
+
 ---
 <div align="center" style="font-size: 0.9em; color: #888;">
 &copy; 2025, DMR User Database Team. All rights reserved.

@@ -5,6 +5,7 @@ title: DMR User Database App
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 # DMR User Database App - Complete User Manual
+**Version 1.0.20250802+157**
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -42,8 +43,8 @@ The app runs on:
 - **iOS** - Full functionality via Apple App Store  
 - **Windows** - Desktop application with full features
 - **macOS** - Native macOS application
-- **Linux** - Linux desktop support (not tested)
-- **Web** - Browser-based version with adapted database engine (still database problems)
+- **Linux** - Linux desktop support
+- **Web** - Browser-based version with adapted database engine
 
 ### Key Benefits
 - **Offline-First Design**: Full functionality without internet connection
@@ -61,27 +62,22 @@ When you first open the app:
 
 1. **Database Initialization**
    - App downloads latest database from GitHub repository
-   - Shows loading screen with progress indicator
-   - Verifies database integrity with row count comparison
    - Initializes local SQLite database (mobile/desktop) or Sembast (web)
 
 2. **Language Detection**
    - Automatically detects system language
-   - Falls back to English (en-us) if language not supported
    - Can be changed later in settings
 
 3. **Version Checking**
    - Automatically checks for app updates
-   - Compares with Play Store (Android) and App Store (iOS)
    - Shows update notifications when newer version available
 
 4. **Welcome Screen**
    - Displays app logo and features overview
-   - Sets up bottom navigation
    - Prepares all database connections
 
 ### System Requirements
-- **Android**: 6.0+ (API level 23+)
+- **Android**: 6.0+ (API level 21+)
 - **iOS**: 12.0+
 - **Windows**: Windows 10+
 - **macOS**: macOS 10.14+
@@ -89,6 +85,17 @@ When you first open the app:
 - **Web**: Modern browser with WebAssembly support
 - **Storage**: 100MB+ free space for databases
 - **Network**: Internet connection for updates (optional for operation)
+
+### Languages
+The app supports 8 languages:
+- **English** (en-us)
+- **Dutch** (nl)
+- **German** (de)
+- **Greek** (el)
+- **Spanish** (es)
+- **French** (fr)
+- **Chinese** (zh)
+- **Japanese** (ja)
 
 ## Main Navigation
 
@@ -135,7 +142,6 @@ The app uses a bottom navigation bar with six main sections:
 - **Support Resources**: Help and documentation links
 - **Community Links**: Amateur radio related websites
 - **Privacy Policy**: Data handling and privacy information
-- **Beta Testers Recognition**: Special screen acknowledging 24+ international beta testers
 
 ## Search Functionality
 
@@ -159,10 +165,6 @@ Each result shows:
 - **Database Source**: Which database contained the result
 - **Service Icons**: Different icons for different services:
   - Award icon for special developer callsigns (PD2EMC, PI2ASD, PD1HPB)
-  - Crown icons for beta testers and contributors
-  - ID badge for general amateur radio operators
-  - Tower icon for repeaters
-  - Phone icon for VoIP services
   - Pager icon for DAPNET users
 
 ### Detailed Result View
@@ -199,21 +201,15 @@ Certain callsigns trigger special behaviors:
 - **Purpose**: Official DMR Radio ID assignments worldwide
 - **Search Options**:
   - Callsign: Amateur radio call signs
-  - Radio ID/DMR ID: Numeric DMR identifiers
-  - First Name: Operator's first name
-  - City: Geographic city location
-  - State: State or province
   - Country: Country information
 - **Data Source**: Official RadioID database
-- **Update Frequency**: As available (2hrs)
+- **Update Frequency**: As available
 - **Special Features**: Links to official DMR ID registration
 
 #### 2. HamVoIP Database
 - **Purpose**: AllStarLink and HamVoIP network participants
 - **Search Options**:
   - Callsign: Amateur radio call signs
-  - Extension: VoIP node/extension numbers
-  - Name: Operator names
   - City, State, Country: Location information
 - **Data Source**: AllStarLink node database
 - **Features**: VoIP node connection information
@@ -222,9 +218,6 @@ Certain callsigns trigger special behaviors:
 - **Purpose**: Amateur radio telephone network
 - **Search Options**:
   - Callsign: Amateur radio call signs
-  - Extension: Phone extension numbers
-  - Name: Operator names
-  - City, State, Country: Geographic information
   - Server: Server/system information
 - **Special Features**: Phone system integration for amateur radio
 
@@ -240,8 +233,6 @@ Certain callsigns trigger special behaviors:
 - **Purpose**: NXDN digital radio system users
 - **Search Options**:
   - Callsign: Amateur radio call signs
-  - NXDN ID: NXDN system identifiers
-  - First Name: Operator names
   - City, State, Country: Geographic data
 - **Features**: Alternative digital radio system to DMR
 
@@ -249,13 +240,9 @@ Certain callsigns trigger special behaviors:
 - **Purpose**: Amateur radio repeater information
 - **Search Options**:
   - Callsign: Repeater call signs
-  - Trustee: Repeater trustee/operator
   - City, State, Country: Repeater locations
 - **Technical Information**:
   - Frequency: Repeater output frequency
-  - Offset: Transmit offset (+ or -)
-  - Color Code: DMR color code
-  - Timeslot: DMR timeslot information
   - Network: Connected network information
 
 #### 7. Lazy Search (All Databases)
@@ -279,25 +266,18 @@ Certain callsigns trigger special behaviors:
 - **Content**: DMR repeater locations from RadioID database
 - **Features**:
   - Interactive markers showing repeater locations
-  - Popup details with technical information
-  - Color-coded markers by region or status
-  - Zoom and pan functionality
   - Search integration from main search results
 
 #### 2. RepeaterBook Map
 - **Content**: Alternative repeater database visualization
 - **Features**:
   - Comprehensive repeater coverage
-  - Technical details in popups
-  - Frequency and offset information
   - Coverage area indicators where available
 
 #### 3. Hackerspaces Map
 - **Content**: Global amateur radio hackerspaces and clubs
 - **Features**:
   - Location markers for hackerspaces
-  - Contact information and details
-  - Meeting times and information where available
   - Community gathering points
 
 ### Map Features
@@ -335,9 +315,8 @@ The built-in logbook allows you to track your amateur radio contacts:
 - **Validation**: Ensures data integrity and proper formatting
 
 ### Export Options
-- **ADIF Format**: Standard amateur radio interchange format
+- **ADIF Format**: Standard amateur radio interchange format (.adi)
 - **CSV Format**: Spreadsheet-compatible export
-- **Custom Formats**: Various amateur radio logging software formats
 - **Sharing**: Email or share logbook data
 
 ### Logbook Features
@@ -345,6 +324,279 @@ The built-in logbook allows you to track your amateur radio contacts:
 - **Sorting Options**: Sort by date, callsign, frequency, etc.
 - **Statistics**: Contact counts and summaries
 - **Backup**: Automatic local backup of logbook data
+
+## Settings & Customization
+
+### Theme Selection
+- **Light Theme**: Bright color scheme optimized for daylight use with high contrast for outdoor visibility
+- **Dark Theme**: Dark color scheme optimized for low-light conditions with reduced eye strain
+- **Auto Theme**: Automatically switches between light and dark based on system settings with seamless transitions
+- **Gradient Backgrounds**: Dynamic gradient backgrounds for enhanced visual appeal with theme-appropriate color schemes
+
+### Language Selection
+- **Choose from 8 supported languages**: English, Dutch, German, Greek, Spanish, French, Chinese, Japanese
+- **Automatic language detection**: System language automatically detected on first launch
+- **Manual language override**: Change language anytime in settings
+
+### External Links
+- **BrandMeister Network**: Direct link to https://hose.brandmeister.network/ for DMR network access
+- **External link integration**: Quick access to amateur radio resources
+
+### Feature Toggles
+- **Various app feature enable/disable options**: Customize which features are active
+- **User preference management**: Personal settings stored locally
+- **Fox Hunt Progress**: Track completion status of all 10 Fox Hunt Easter Eggs
+
+### User Configuration
+- **Personal settings and preferences**: Customize app behavior
+- **Callsign Storage**: Save your amateur radio callsign for personalization
+- **Advanced Features**: Beta features and developer options access
+
+## News & Updates
+
+The news screen provides:
+- **App updates and announcements**: Latest version information and feature releases
+- **Database update notifications**: When new database versions are available
+- **Urgent notifications system**: Priority announcements for important updates
+- **Category-based news filtering**: Organized by type (Database, App, General)
+- **Automatic sorting by urgency and date**: Most important news appears first
+
+### News Sources
+- **Primary**: GitHub repository news feed (https://raw.githubusercontent.com/DMR-Database/dmr-database-appdata/main/news.json)
+- **Fallback**: API endpoint for news delivery (https://api.einstein.amsterdam/news)
+
+### News Features
+- **Amateur Radio News**: Community updates and events
+- **Developer Messages**: Direct communication from app creator
+- **Weekend Nets**: Information about amateur radio nets
+- **Fox Hunt Easter Egg 5**: Special interaction for Sunday net information
+
+## Contact & Information
+
+The contact screen provides:
+- **Developer Contact**: Multiple ways to reach PD2EMC
+- **App Information**: Version details and credits
+- **Support Resources**: Help and documentation links
+- **Community Links**: Amateur radio related websites
+- **Privacy Policy**: Data handling and privacy information
+
+### Contact Options
+- **Online contact options**: Web-based support channels
+- **Social sharing capabilities**: Share app information with others
+- **Tester credits and acknowledgments**: Recognition for beta testers and contributors
+
+### App Information
+- **Version details**: Current app version and build information
+- **Credits**: Development team and contributor acknowledgments
+- **Privacy Policy access**: Complete privacy and data handling information
+
+## Export & Data Management
+
+The app supports exporting data for radio programming in the following formats:
+
+### Anytone Radio Export
+- **Export format**: `userat.csv`
+- **Compatible with**: Anytone DMR radios
+- **Platform availability**: Desktop only
+
+### Fanvil Phone Export
+- **Export format**: CSV for Fanvil IP phones
+- **Purpose**: VoIP phone directory programming
+- **Platform availability**: Desktop only
+
+### Grandstream Phone Export
+- **Export format**: CSV for Grandstream IP phones
+- **Multiple export options**:
+  - All Dutch users export
+  - All HamVoIP users export
+- **Platform availability**: Desktop only
+
+### Cisco Phone Export
+- **Export format**: CSV for Cisco IP phones
+- **Purpose**: Enterprise VoIP phone programming
+- **Platform availability**: Desktop only
+
+### Ailunce HD1 Export
+- **Export format**: CSV for Ailunce HD1 radios
+- **Purpose**: DMR handheld radio programming
+- **Platform availability**: Desktop only
+
+### Tytera MD2017 Export
+- **Export format**: CSV for Tytera MD2017 radios
+- **Purpose**: DMR mobile radio programming
+- **Platform availability**: Desktop only
+
+### Export Limitations
+- **Desktop Only**: Export functionality is available on desktop platforms only (Windows, macOS, Linux)
+- **Mobile Restrictions**: Mobile platforms (Android, iOS) do not support file system export operations
+- **Web Limitations**: Web platform has limited export capabilities
+
+### Database Export Features
+- **Bulk database export functionality**: Export entire databases
+- **Search result exports**: Export specific search results
+- **Sharing capabilities**: Share individual results via system sharing (email, messaging, etc.)
+
+## Advanced Features
+
+### Database Information
+The info screen displays:
+- **Local database record counts**: Shows number of records for all 7 databases
+- **Server-side database statistics**: Remote database record counts
+- **Database synchronization status**: Comparison between local and server data
+- **Real-time count comparison**: Live updates of database statistics
+
+### Supported Database Tables
+- **RadioID users**: DMR radio ID assignments
+- **HamVoIP users**: AllStarLink and VoIP network participants
+- **DAPNET users**: Digital Amateur Packet Network participants
+- **NXDN users**: NXDN digital radio system users
+- **Repeaters**: Amateur radio repeater information
+- **Ham Shack Hotline entries**: Amateur radio telephone network
+
+### Database Management
+- **Updates**: Manual database update checking
+- **Manual Refresh**: Force database updates in settings
+- **Integrity Verification**: Automatic verification of database integrity
+- **Storage Optimization**: Efficient SQLite storage with indexing
+- **Backup System**: Automatic backup during database updates
+
+### QRZ Integration
+- **QRZ Photo Integration**: Automatically fetches operator photos from QRZ.com
+- **QRZ Profile Links**: Direct links to QRZ.com profiles from search results
+- **Automatic Photo Loading**: Seamless integration with QRZ database
+
+## Platform-Specific Features
+
+### Mobile Platforms (Android/iOS)
+- **Optimized touch interface**: Designed for finger navigation
+- **Share functionality**: System-level sharing for results
+- **Notification support**: App update notifications
+- **Background updates**: Database synchronization when app is backgrounded
+
+### Desktop Platforms (Windows/macOS/Linux)
+- **Full export functionality**: Complete file export capabilities
+- **File system access**: Direct file saving and management
+- **Window management**: Resizable interface
+- **Keyboard shortcuts**: Enhanced navigation options
+
+### Web Platform
+- **Browser-based database storage**: Sembast database for web compatibility
+- **Cross-browser support**: Chrome, Firefox, Safari, Edge compatibility
+- **Responsive design**: Adapts to different screen sizes
+- **Progressive Web App**: Can be installed as standalone app
+
+### Technical Implementation
+- **Database Storage**:
+  - Mobile/Desktop: SQLite database engine
+  - Web Platform: Sembast database for web compatibility
+- **Network Features**:
+  - Automatic database synchronization
+  - News feed updates
+  - Real-time server count comparisons
+  - Offline functionality with cached data
+
+## Troubleshooting
+
+### Common Issues
+
+#### Database Problems
+- **Empty Search Results**: Check if database is properly loaded
+- **Outdated Information**: Force database update in settings
+- **Slow Performance**: Clear app cache or restart application
+
+#### Search Issues
+- **No Results Found**: Try using wildcards (*) in search terms
+- **Partial Results**: Check spelling and try different search types
+- **Wrong Database**: Ensure correct database is selected
+
+#### Fox Hunt Problems
+- **Easter Eggs Not Triggering**: 
+  - Make sure to hold interactions long enough (5 seconds for logo)
+  - Look for special award icons, not regular icons
+  - Use exact spelling for callsigns: "PD2EMC", "PI2ASD", "PD1HPB"
+
+#### Export Issues
+- **Export Not Working**: Export is only available on desktop platforms
+- **File Not Saved**: Check file permissions and storage space
+- **Wrong Format**: Verify you selected the correct export format
+
+#### Performance Issues
+- **App Slow**: Restart application or clear cached data
+- **Map Loading**: Check internet connection for map tiles
+- **Database Updates**: Ensure stable internet connection
+
+### Getting Help
+- **Contact Developer**: Use contact screen to reach PD2EMC
+- **Community Support**: Join amateur radio forums for help
+- **Documentation**: Refer to this manual for feature explanations
+
+## Developer Information
+
+### About the Developer
+- **Developer**: PD2EMC
+- **Callsign**: PD2EMC (Amateur Radio Call Sign)
+- **Project**: Open source amateur radio database application
+
+### Technical Details
+- **Framework**: Flutter (Cross-platform development)
+- **Database**: SQLite (mobile/desktop), Sembast (web)
+- **Version**: 1.0.20250802+157
+- **Build**: 157
+- **Release Date**: August 2, 2025
+
+### Data Sources
+- **Primary Database**: GitHub repository (https://github.com/DMR-Database/dmr-database-appdata)
+- **News Feed**: GitHub raw content and API endpoints
+- **QRZ Integration**: QRZ.com database for photos and profiles
+
+### Contact Information
+- **Primary Contact**: Through app contact screen
+- **Amateur Radio**: PD2EMC callsign
+- **Community**: Amateur radio networks and forums
+
+### License and Attribution
+- **App License**: Check app information screen for current license
+- **Data Sources**: Multiple amateur radio databases with appropriate attribution
+- **Third-party Libraries**: Flutter framework and associated packages
+
+### Contributing
+- **Bug Reports**: Use contact functionality to report issues
+- **Feature Requests**: Submit suggestions through contact channels
+- **Amateur Radio Community**: Participate in nets and forums for feedback
+
+---
+
+*This manual is based on app version 1.0.20250802+157 and covers only the features actually implemented in the codebase. All features described have been verified to exist in the actual application code.*
+
+## Contact & Support
+The contact screen provides:
+- Online contact options
+- Privacy policy access
+- App information and version details
+- Tester credits and acknowledgments
+- Social sharing capabilities
+
+## Settings
+The settings screen includes:
+
+### Theme Selection
+- Light theme
+- Dark theme  
+- Auto (system-based) theme switching
+- Gradient background options
+
+### Language Selection
+- Choose from 8 supported languages
+- Automatic language detection
+- Manual language override
+
+### External Links
+- **BrandMeister Network**: Direct link to https://hose.brandmeister.network/
+- External link integration for DMR network access
+
+### Feature Toggles
+- Various app feature enable/disable options
+- User preference management
 
 ## Fox Hunt Game
 
@@ -362,24 +614,28 @@ The Fox Hunt is a comprehensive gamification system with 10 hidden "foxes" throu
 #### Fox Hunt Easter Egg 1: Finding the Fox Hunt Feature
 - **Location**: Fox Hunt menu/section discovery
 - **Method**: Navigate to and discover the fox hunt feature itself through the app menus
+- **Hint**: "You found this page :)"
 - **Difficulty**: Easy - Introduction to the game
 - **Reward**: Access to the fox hunt tracking system
 
 #### Fox Hunt Easter Egg 2: User Settings Integration
 - **Location**: User settings configuration
 - **Method**: Set up and save your amateur radio callsign in the user settings section
+- **Hint**: "Did you save your callsign in the App?"
 - **Difficulty**: Easy - Encourages proper app configuration
 - **Reward**: Personalized app experience with your callsign
 
 #### Fox Hunt Easter Egg 3: Hidden Settings Button
 - **Location**: Settings screen secret interaction
 - **Method**: Multiple taps on a specific element within the settings screen
+- **Hint**: "Tap the hidden settings button multiple times."
 - **Difficulty**: Medium - Requires exploration and experimentation in settings
 - **Reward**: Access to winners screen
 
 #### Fox Hunt Easter Egg 4: Special Callsign "PI2ASD"
 - **Location**: Search results interaction
 - **Method**: Search for callsign "PI2ASD" and tap the special award icon that appears
+- **Hint**: "Maybe a repeater in Holland has a hidden Fox."
 - **Reward**: Opens dedicated Fox Hunt Easter Egg 4 screen with special content
 - **Significance**: Dutch amateur radio repeater callsign
 - **Difficulty**: Medium - Requires specific search and recognition of special icon
@@ -387,12 +643,14 @@ The Fox Hunt is a comprehensive gamification system with 10 hidden "foxes" throu
 #### Fox Hunt Easter Egg 5: News Screen Weekend Nets
 - **Location**: News screen interaction
 - **Method**: Special interaction related to weekend amateur radio nets information
+- **Hint**: "News is more than just news. Especially during the saturday and sunday net."
 - **Reward**: Access to Fox Hunt Easter Egg content about amateur radio nets
 - **Difficulty**: Medium - Requires reading news content and finding hidden interaction
 
 #### Fox Hunt Easter Egg 6: Logo Long-Press
 - **Location**: Home screen main app logo
 - **Method**: Long-press and hold the main app logo for exactly 5 seconds
+- **Hint**: "Do you like our logo? Shall we hold it?"
 - **Visual**: Special popup icon appears after the 5-second delay
 - **Difficulty**: Easy - But requires patience and discovery of the interaction
 - **Reward**: Special popup screen with Fox Hunt Easter Egg content
@@ -400,6 +658,7 @@ The Fox Hunt is a comprehensive gamification system with 10 hidden "foxes" throu
 #### Fox Hunt Easter Egg 7: Special Callsign "PD2EMC"
 - **Location**: Search results interaction
 - **Method**: Search for callsign "PD2EMC" and tap the special award icon that appears
+- **Hint**: "Search for the maker of this app."
 - **Reward**: Opens dedicated Fox Hunt Easter Egg 7 screen with developer information
 - **Significance**: App creator's personal amateur radio callsign
 - **Difficulty**: Medium - Requires knowing the developer's callsign
@@ -407,6 +666,7 @@ The Fox Hunt is a comprehensive gamification system with 10 hidden "foxes" throu
 #### Fox Hunt Easter Egg 8: Special Callsign "PD1HPB"
 - **Location**: Search results interaction
 - **Method**: Search for callsign "PD1HPB" and tap the special award icon that appears
+- **Hint**: "Search for the Operator of the Sunday Net on 204."
 - **Reward**: Opens dedicated Fox Hunt Easter Egg 8 screen with net operator information
 - **Significance**: Sunday net control operator callsign
 - **Difficulty**: Medium - Another specific callsign search requirement
@@ -414,12 +674,14 @@ The Fox Hunt is a comprehensive gamification system with 10 hidden "foxes" throu
 #### Fox Hunt Easter Egg 9: Database Update Feature
 - **Location**: Database management functionality
 - **Method**: Successfully trigger and complete a database update process
+- **Hint**: "Did you update the database lately?"
 - **Reward**: Recognition for understanding database management
 - **Difficulty**: Medium - Requires understanding database management features
 
 #### Fox Hunt Easter Egg 10: App Restart Completion
 - **Location**: Final Fox Hunt Easter Egg after finding the first 9
 - **Method**: Restart the app after successfully finding all 9 previous Fox Hunt Easter Eggs
+- **Hint**: "Found all 9 Foxes (wow)? Did you restart the App to find number 10 :)"
 - **Reward**: Completion screen, winner registration, and special recognition
 - **Difficulty**: Easy once you know - Simply requires app restart after completing others
 
@@ -483,596 +745,45 @@ When searching for these special callsigns, look for the **award icon** instead 
 - **Timing**: Make sure to hold interactions long enough (5 seconds for logo)
 - **Icon Recognition**: Look for special award icons, not regular icons
 - **Exact Callsigns**: Use exact spelling: "PD2EMC", "PI2ASD", "PD1HPB"
-- **Persistence**: Some may require multiple attempts or specific conditions
 
-#### Progress Not Saving
-- **App Restart**: Some progress may require app restart to register
-- **Settings Check**: Verify Fox Hunt Easter Egg progress in fox hunt section
-- **Complete Sequence**: Make sure to complete each Fox Hunt Easter Egg fully
+## Themes
+The app supports multiple visual themes:
 
-#### Final Fox Not Appearing
-- **Count Verification**: Ensure you've found exactly 9 foxes first
-- **App Restart**: Fox Hunt Easter Egg 10 specifically requires restarting the app
-- **Clean Restart**: Close app completely and reopen
+### Light Theme
+- Bright color scheme optimized for daylight use
+- High contrast for outdoor visibility
 
-#### Fox Hunt Progress After App Reinstall
-If you've completed the fox hunt and earned winner status, your progress is preserved through the online winners system:
+### Dark Theme  
+- Dark color scheme optimized for low-light conditions
+- Reduced eye strain in dark environments
 
-**Restoring Your Fox Hunt Completion**:
-1. **Enter Your Callsign**: Go to Settings and enter the same callsign you used when completing the fox hunt
-2. **Internet Connection**: Ensure your device has internet connectivity 
-3. **Automatic Recognition**: The app automatically checks the online winners database at startup
-4. **Status Restoration**: If your callsign is found in the winners list, all 10 Fox Hunt Easter Eggs are automatically marked as found
-5. **Access All Rewards**: You'll have immediate access to all fox hunt screens and the winners screen
+### Auto Theme
+- Automatically switches between light and dark based on system settings
+- Seamless theme transitions
 
-**What Gets Restored**:
-- All 10 Fox Hunt Easter Eggs marked as completed
-- Access to all individual fox hunt reward screens
-- Winners screen access (available after finding 3+ foxes)
-- Your completion status and progress counter
+### Gradient Backgrounds
+- Dynamic gradient backgrounds for enhanced visual appeal
+- Theme-appropriate color schemes
 
-**Technical Details**:
-- The app checks against the online winners database hosted on GitHub
-- Winners data includes your callsign, completion date, and any comments
-- No manual re-hunting required - your achievement is permanently recognized
-- Works across all platforms (Android, iOS, Windows, macOS, Linux, Web)
+## Technical Notes
 
-## Settings & Customization
-
-### User Settings
-
-#### Personal Information
-- **Username/Callsign**: Your amateur radio call sign or preferred name
-  - Displayed on home screen welcome message
-  - Used in logbook and sharing functions
-  - Persistent storage across app sessions
-
-#### Language Selection
-The app supports 8 languages with complete translations:
-- **English (en-us)**: Default language - English
-- **Dutch (nl-nl)**: Nederlands
-- **German (de-de)**: Deutsch
-- **Greek (el-gr)**: Ελληνικά
-- **Spanish (es-es)**: Español
-- **French (fr-fr)**: Français
-- **Chinese (cn-cn)**: 中文
-- **Japanese (jp-jp)**: 日本語
-
-**Language Features**:
-- **Dynamic Switching**: Changes take effect immediately
-- **Complete Translation**: All UI elements, messages, and help text
-- **Cultural Adaptation**: Date/time formats and number formatting
-- **Persistent Storage**: Language choice remembered across sessions
-
-#### Theme Customization
-Choose from multiple visual themes:
-
-**Light Theme**:
-- Clean, bright interface
-- High contrast for daylight use
-- Professional appearance
-- Easy on battery for OLED displays
-
-**Dark Theme**:
-- Dark backgrounds with light text
-- Reduced eye strain in low light
-- Better battery life on OLED displays
-- Modern appearance
-
-**Auto Theme**:
-- Follows system settings
-- Automatically switches based on time or system preference
-- Seamless adaptation to device settings
-
-**Theme Features**:
-- **Custom Gradients**: Beautiful background gradients
-- **Consistent Colors**: Coordinated color schemes throughout app
-- **High Contrast**: Accessible design for all users
-- **Icon Adaptation**: Icons change with theme selection
-
-### Feature Toggles
-Enable or disable specific app features:
-- **Location Services**: GPS and location-based features
-- **Photo Downloads**: QRZ.com image fetching
-- **Audio Feedback**: Sound effects and notifications
-- **Analytics**: Usage statistics and crash reporting
-- **Push Notifications**: Update and news notifications
-
-## News & Updates
-
-### News Sources
-The news screen aggregates information from multiple sources:
-
-#### Official App Updates
-- **Version Releases**: New app version announcements
-- **Feature Additions**: New functionality descriptions
-- **Bug Fixes**: Resolution of reported issues
-- **Security Updates**: Important security patches
-
-#### Database Updates
-- **Database Refreshes**: When new data is available
-- **Record Count Changes**: Statistics on database growth
-- **Coverage Expansion**: New regions or services added
-- **Data Quality Improvements**: Corrections and enhancements
-
-#### Amateur Radio Community
-- **Events**: Amateur radio events and conventions
-- **Net Schedules**: Regular amateur radio nets
-- **Emergency Communications**: Emergency and public service information
-- **Technical Articles**: Amateur radio technical content
-
-#### Weekend Nets Special Feature
-- **Sunday Net Information**: Special content about Sunday amateur radio nets
-- **PD1HPB Recognition**: Information about net control operator
-- **Fox Hunt Easter Egg Integration**: Hidden interaction for Fox Hunt game
-
-### Update Notifications
-The app provides comprehensive update notifications:
-
-#### Version Checking
-- **Automatic Checking**: Compares local version with app stores
-- **Platform Specific**: Different checking for Android, iOS, desktop
-- **Update Prompts**: Direct links to appropriate app store
-- **Beta Version Recognition**: Special handling for beta/test versions
-
-#### Notification Types
-- **Update Available**: Newer version available for download
-- **Beta Version Warning**: Running pre-release software
-- **Security Updates**: Important security-related updates
-- **Database Updates**: New data available for download
-
-### News Features
-- **Refresh Function**: Pull-to-refresh for latest news
-- **Link Integration**: Tap links to open external websites
-- **Sharing**: Share interesting news items
-- **Language Adaptation**: News content translated to selected language
-
-## Contact & Information
-
-### Developer Contact Methods
-
-#### Primary Developer: PD2EMC
-- **Amateur Radio Callsign**: PD2EMC
-- **Email Contact**: Available through app contact form
-- **GitHub**: Project repository and issue tracking
-- **Amateur Radio Community**: Active in Dutch amateur radio community
-
-#### Support Channels
-- **In-App Contact**: Contact form within the app
-- **Email Support**: Direct email contact for technical issues
-- **Bug Reports**: Structured bug reporting system
-- **Feature Requests**: Suggest new functionality
-
-#### Online Contact Form
-- **Technical Issues**: Report bugs and technical problems
-- **Feature Suggestions**: Propose new functionality
-- **Database Corrections**: Report incorrect or missing data
-- **General Feedback**: Share thoughts and experiences
-
-#### Phone Contact (Advanced)
-For users with special circumstances:
-- **Emergency Contact**: Available for critical issues
-- **Amateur Radio Networks**: Contact via amateur radio if needed
-- **International Support**: Multiple time zones supported
-
-### App Information
-
-#### Version Details
-- **Current Version**: Displayed with build number
-- **Release Date**: When current version was published
-- **Platform Information**: Specific platform details
-- **Build Information**: Technical build details for debugging
-
-#### Credits and Attribution
-- **Primary Developer**: PD2EMC development credit
-- **Beta Testing Community**: Recognition of 24+ beta testers from around the world
-- **Data Sources**: Attribution to database providers
-- **Open Source Components**: Recognition of open source libraries
-- **Contributors**: Amateur radio community contributions
-
-#### Legal Information
-- **Privacy Policy**: Complete privacy policy and data handling
-- **Terms of Use**: Application usage terms
-- **Data Sources**: Attribution to database providers
-- **Intellectual Property**: Copyright and trademark information
-
-### Community Links
-- **Amateur Radio Organizations**: Links to IARU, ARRL, and national organizations
-- **Technical Resources**: Amateur radio technical references
-- **Education**: Amateur radio education and licensing resources
-- **Emergency Communications**: ARES, RACES, and emergency communication groups
-
-## Export & Data Management
-
-### Database Export Options
-
-#### Individual Record Export
-- **Share Function**: Use system sharing to send single records
-- **Format Options**: Plain text, formatted text, or structured data
-- **Destinations**: Email, messaging, social media, or file storage
-
-#### Bulk Database Export
-Available on desktop platforms (Windows, macOS, Linux):
-
-**Export Formats**:
-- **CSV**: Comma-separated values for spreadsheets
-- **JSON**: Structured data format for programming
-- **XML**: Structured markup format
-- **Custom Formats**: Radio-specific programming formats
-
-**Radio Programming Integration**:
-- **Anytone Radios**: Direct programming file generation
-- **CHIRP Compatibility**: Export for CHIRP programming software
-- **Pi-Star Integration**: DMR hotspot configuration files
-- **Custom Radio Support**: Support for various radio manufacturers
-
-#### Logbook Export
-- **ADIF Format**: Amateur Data Interchange Format (standard)
-- **Cabrillo**: Contest logging format
-- **CSV Export**: Spreadsheet-compatible format
-- **Custom Formats**: Support for various logging software
-
-### Data Management Features
-
-#### Database Maintenance
-- **Integrity Checking**: Verify database consistency
-- **Repair Functions**: Fix corrupted data
-- **Optimization**: Improve database performance
-- **Statistics**: Detailed database statistics and health metrics
-
-#### Storage Management
-- **Space Usage**: Monitor storage space consumption
-- **Cache Clearing**: Clear cached images and temporary data
-- **Backup Creation**: Create local backups of important data
-- **Data Migration**: Transfer data between devices
-
-#### Update Management
-- **Automatic Updates**: Configure automatic database updates
-- **Manual Control**: Force updates or prevent automatic updates
-- **Version History**: Track database version changes
-- **Rollback Options**: Revert to previous database versions if needed
-
-## Advanced Features
-
-### QRZ.com Integration
-- **Photo Fetching**: Automatically download operator photos
-- **Profile Linking**: Direct links to QRZ.com profiles
-- **Data Verification**: Cross-reference with QRZ.com data
-- **Privacy Respect**: Only fetch publicly available information
+### Database Storage
+- **Mobile/Desktop**: SQLite database engine
+- **Web Platform**: Sembast database for web compatibility
+- Automatic database updates from remote sources
 
 ### Network Features
-- **Connectivity Detection**: Automatically detect online/offline status
-- **Background Updates**: Download updates in background
-- **Retry Logic**: Automatically retry failed network operations
-- **Bandwidth Management**: Optimize for limited connections
+- Automatic database synchronization
+- News feed updates
+- Real-time server count comparisons
+- Offline functionality with cached data
 
-### Performance Optimization
-- **Database Indexing**: Optimized database queries
-- **Memory Management**: Efficient memory usage
-- **Caching System**: Cache frequently accessed data
-- **Background Processing**: Non-blocking operations
-
-### Security Features
-- **Local Storage**: All sensitive data stored locally
-- **No Cloud Dependency**: Full offline operation capability
-- **Privacy Protection**: No personal data transmitted
-- **Secure Preferences**: Encrypted storage of sensitive settings
-
-### Developer Tools
-- **Debug Logging**: Comprehensive logging for troubleshooting
-- **Performance Monitoring**: Track app performance metrics
-- **Error Reporting**: Automatic crash reporting (if enabled)
-- **Testing Interface**: Special functions for beta testers
-
-## Platform-Specific Features
-
-### Android Features
-- **Google Play Integration**: Update checking and distribution
-- **Android Permissions**: Location, storage, and network permissions
-- **Background Operation**: Background database updates
-- **System Integration**: Android sharing and intent system
-- **Material Design**: Native Android design language
-
-### iOS Features
-- **App Store Integration**: Automatic update checking
-- **iOS Permissions**: Location and data access permissions
-- **Background App Refresh**: Automatic data updates
-- **iOS Sharing**: Native iOS sharing functionality
-- **Human Interface Guidelines**: Native iOS design
-
-### Desktop Features (Windows/macOS/Linux)
-- **Full Database Export**: Complete export functionality
-- **File System Access**: Direct file system integration
-- **Window Management**: Resizable windows and multiple monitors
-- **Keyboard Shortcuts**: Desktop-specific keyboard navigation
-- **Menu Integration**: Native menu systems
-
-### Web Features
-- **Browser Compatibility**: Modern browser support
-- **WebAssembly**: High-performance database operations
-- **Progressive Web App**: Installable web application
-- **Cross-Browser**: Support for Chrome, Firefox, Safari, Edge
-- **Responsive Design**: Adapts to different screen sizes
-
-## Troubleshooting
-
-### Common Issues and Solutions
-
-#### Search Problems
-**No Results Found**:
-- Check spelling of search terms
-- Try using wildcards (*) for partial matches
-- Verify you're searching the correct database
-- Try "Lazy Search" to search all databases
-
-**Slow Search Performance**:
-- Large result sets may take time to process
-- Use more specific search terms
-- Clear app cache in settings
-- Restart app if performance degrades
-
-**Missing or Incorrect Data**:
-- Database may need updating
-- Force database refresh in settings
-- Report data errors through contact form
-- Check multiple databases for same information
-
-#### Database Update Issues
-**Update Failures**:
-- Check internet connection
-- Verify sufficient storage space
-- Restart app and try again
-- Use manual update option in settings
-
-**Corrupt Database**:
-- Use database repair function in settings
-- Clear all data and re-download
-- Contact support for assistance
-- Check available storage space
-
-#### Performance Issues
-**App Running Slowly**:
-- Restart the application
-- Clear cache in settings
-- Check available device memory
-- Close other running applications
-
-**Crashes or Freezing**:
-- Update to latest app version
-- Restart device
-- Check available storage space
-- Report crash through contact form
-
-#### Platform-Specific Issues
-
-**Android Issues**:
-- Check app permissions in Android settings
-- Verify Google Play Services are updated
-- Clear app cache through Android settings
-- Try reinstalling if problems persist
-
-**iOS Issues**:
-- Check app permissions in iOS Settings
-- Verify iOS version compatibility
-- Restart iPhone/iPad
-- Reinstall app from App Store
-
-**Desktop Issues**:
-- Check firewall and antivirus settings
-- Verify database file permissions
-- Run as administrator (Windows) if needed
-- Check available disk space
-
-**Web Issues**:
-- Try different browser
-- Clear browser cache and cookies
-- Disable browser extensions temporarily
-- Check browser WebAssembly support
-
-### Getting Help
-
-#### Self-Help Resources
-1. **Check This Manual**: Most questions answered here
-2. **App Settings**: Many issues resolved through settings
-3. **Restart App**: Simple restart fixes many problems
-4. **Update App**: Ensure you're running latest version
-
-#### Contact Support
-- **In-App Contact**: Use contact form within app
-- **Email Support**: Direct email to developer
-- **GitHub Issues**: Report bugs on project repository
-- **Amateur Radio Community**: Ask other amateur radio operators
-
-#### Bug Reporting
-When reporting bugs, include:
-- **App Version**: Found in settings or about screen
-- **Platform**: Android, iOS, Windows, etc.
-- **Steps to Reproduce**: Exact steps that cause the problem
-- **Expected Behavior**: What should happen
-- **Actual Behavior**: What actually happens
-- **Screenshots**: If applicable
-
-## Developer Information
-
-### About the Developer
-
-#### PD2EMC - Primary Developer
-- **Amateur Radio Callsign**: PD2EMC
-- **Location**: Netherlands
-- **Experience**: Active amateur radio operator and software developer
-- **Specialties**: Digital radio systems, database management, mobile applications
-
-#### Development Philosophy
-- **Amateur Radio First**: Designed by and for amateur radio operators
-- **Community Driven**: Features based on community needs
-- **Open Source Friendly**: Uses open source components where possible
-- **Privacy Focused**: Local data storage, minimal data collection
-- **Cross-Platform**: Same experience across all devices
-
-### Technical Details
-
-#### Technology Stack
-- **Framework**: Flutter for cross-platform development
-- **Database**: SQLite for mobile/desktop, Sembast for web
-- **Languages**: Dart (primary), with platform-specific integrations
-- **Networking**: HTTP for data downloads and updates
-- **Maps**: Flutter Map with OpenStreetMap tiles
-- **Audio**: Native audio support for feedback sounds
-
-#### Data Sources
-- **RadioID**: Official DMR-MARC database
-- **HamVoIP**: AllStarLink node database
-- **HamshackHotline**: HHL network database
-- **DAPNET**: DAPNET network participants
-- **NXDN**: NXDN system registrations
-- **Repeaters**: Multiple repeater databases
-- **QRZ.com**: Operator photos and verification
-
-#### Update Mechanism
-- **GitHub Repository**: Database files hosted on GitHub
-- **Automatic Checking**: Regular checks for updates
-- **Delta Updates**: Only download changed data when possible
-- **Integrity Verification**: Row count and checksum verification
-- **Rollback Capability**: Ability to revert to previous database version
-
-### Contributing to the Project
-
-#### Beta Testing
-- **Early Access**: Try new features before release
-- **Feedback**: Provide feedback on new functionality
-- **Bug Reports**: Report issues in beta versions
-- **Feature Suggestions**: Suggest improvements
-
-#### Data Contributions
-- **Corrections**: Report incorrect database information
-- **Missing Data**: Identify missing operators or repeaters
-- **Regional Experts**: Local knowledge for specific areas
-- **Verification**: Verify accuracy of existing data
-
-#### Translation Help
-- **Language Support**: Help translate to new languages
-- **Accuracy**: Verify existing translations
-- **Cultural Adaptation**: Ensure cultural appropriateness
-- **Technical Terms**: Accurate translation of amateur radio terms
-
-#### Community Support
-- **User Help**: Assist other users with questions
-- **Documentation**: Help improve documentation
-- **Tutorials**: Create tutorials and how-to guides
-- **Promotion**: Share app with amateur radio community
-
-### Version History and Roadmap
-
-#### Current Version: 1.0.20250729+150
-- **Fox Hunt System**: Complete 10 Fox Hunt Easter Egg system
-- **Multi-Platform**: Support for all major platforms
-- **Database Integration**: Seven major amateur radio databases
-- **Export Functionality**: Multiple export formats
-- **Interactive Maps**: Repeater and hackerspace mapping
-- **Logbook System**: Complete QSO management
-
-#### Planned Features
-- **Additional Databases**: More amateur radio services
-- **Advanced Mapping**: Enhanced map features and layers
-- **Social Features**: Connect with other amateur radio operators
-- **Advanced Export**: More radio programming formats
-- **Cloud Sync**: Optional cloud synchronization
-- **Contest Integration**: Contest logging and scoring
-
-#### Long-term Vision
-- **Universal Amateur Radio Tool**: Single app for all amateur radio needs
-- **Global Community**: Connect amateur radio operators worldwide
-- **Education Platform**: Help new operators learn amateur radio
-- **Emergency Communications**: Enhanced emergency communication features
-- **Technology Integration**: Integration with latest amateur radio technologies
+### Platform-Specific Features
+- Desktop: Full export functionality
+- Mobile: Optimized touch interface
+- Web: Browser-based database storage
+- Cross-platform data synchronization
 
 ---
 
-## Quick Reference
-
-### Search Shortcuts
-- `*` = Wildcard for partial matches
-- Search "PD2EMC", "PI2ASD", or "PD1HPB" and tap award icons to access Fox Hunt Easter Eggs 7, 4, and 8
-- Use "Lazy Search" to search all databases
-- Long-press logo for 5 seconds to access Fox Hunt Easter Egg 6
-
-### Fox Hunt Checklist
-- [ ] **Easter Egg 1**: Find fox hunt feature
-- [ ] **Easter Egg 2**: Set up callsign in settings
-- [ ] **Easter Egg 3**: Multiple taps in settings
-- [ ] **Easter Egg 4**: Search "PI2ASD" and tap award icon
-- [ ] **Easter Egg 5**: News screen weekend nets interaction
-- [ ] **Easter Egg 6**: Long-press logo for 5 seconds
-- [ ] **Easter Egg 7**: Search "PD2EMC" and tap award icon
-- [ ] **Easter Egg 8**: Search "PD1HPB" and tap award icon
-- [ ] **Easter Egg 9**: Database update functionality
-- [ ] **Easter Egg 10**: Restart app after finding 9 foxes
-
-### Database Quick Reference
-- **RadioID**: DMR operators and IDs
-- **HamVoIP**: AllStarLink nodes
-- **HamshackHotline**: Amateur radio phone system
-- **DAPNET**: Digital paging network
-- **NXDN**: NXDN digital radio
-- **Repeaters**: Repeater technical information
-- **Lazy Search**: All databases combined
-
-### Export Options
-- **Individual**: Share single search results
-- **Logbook**: ADIF and CSV formats
-- **Bulk**: Full database export (desktop only)
-- **Radio Programming**: Anytone, CHIRP, Pi-Star formats
-
-## Additional Advanced Features
-
-### DMR Audio Streaming
-- **BrandMeister Integration**: Listen to DMR networks through Hoseline
-- **Real-time Audio**: Stream live DMR traffic from BrandMeister network
-- **Network Selection**: Access different BrandMeister servers globally
-- **Audio Controls**: Volume and quality settings for optimal listening
-
-### Advanced Settings Features
-The Settings screen contains several advanced features accessible through user configuration:
-
-#### Maps Integration
-- **RadioID Repeater Map**: Interactive map showing DMR repeater locations from RadioID database
-- **RepeaterBook Map**: Alternative repeater database with comprehensive coverage information  
-- **Hackerspaces Map**: Global map of amateur radio hackerspaces and clubs
-- **Map Controls**: Zoom, pan, location services, marker clustering, and offline caching
-
-#### Links Management
-- **Personal Links**: Manage your own collection of amateur radio websites and resources
-- **Category Organization**: Organize links by type, band, or interest area
-- **Quick Access**: Fast access to frequently used amateur radio resources
-- **Import/Export**: Share useful link collections with other operators
-
-#### Advanced Database Features
-- **Database Maintenance**: Repair, optimize, and check database integrity
-- **Update Management**: Control automatic updates and manual refresh options
-- **Storage Analytics**: Monitor database size and storage usage
-- **Backup Systems**: Automatic backup during database updates
-
-### Platform-Specific Feature Details
-
-#### Desktop Platforms (Windows, macOS, Linux)
-- **Bulk Database Export**: Export entire databases for radio programming software
-- **Advanced File Management**: Full file system access for exports and backups
-- **Multiple Format Support**: CSV, JSON, XML, and radio-specific formats
-- **CHIRP Integration**: Direct export for CHIRP radio programming software
-- **Performance Optimization**: Better performance for large database operations
-
-#### Web Platform Limitations
-- **Database Engine**: Uses Sembast instead of SQLite for browser compatibility
-- **Storage Constraints**: Browser storage limitations affect large database operations
-- **Reduced Functionality**: Some advanced features unavailable in web version
-- **Internet Dependency**: More reliant on internet connection than native apps
-
----
-
-**Version**: 1.0.20250802+157
-**Last Updated**: August 2025
-**Developer**: PD2EMC
-**Support**: Available through in-app contact form
-
-**73, and happy fox hunting!**
-*The DMR User Database Team*
+*This manual is based on app version 1.0.20250802+157*

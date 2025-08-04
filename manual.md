@@ -432,7 +432,6 @@ The built-in logbook system provides comprehensive QSO (contact) management with
 - **Light Theme**: Bright color scheme optimized for daylight use with high contrast for outdoor visibility
 - **Dark Theme**: Dark color scheme optimized for low-light conditions with reduced eye strain
 - **Auto Theme**: Automatically switches between light and dark based on system settings with seamless transitions
-- **Gradient Backgrounds**: Dynamic gradient backgrounds for enhanced visual appeal with theme-appropriate color schemes
 
 ### Language Selection
 - **Choose from 8 supported languages**: English, Dutch, German, Greek, Spanish, French, Chinese, Japanese
@@ -460,29 +459,12 @@ The User Settings screen provides comprehensive options for personalizing your a
 
 #### Amateur Radio Profile
 - **Callsign Entry**: Store your amateur radio callsign for personalization
-- **License Class**: Select your amateur radio license level
-- **Operating Preferences**: Set default modes, bands, and power levels
-- **Location Information**: Home QTH (city, state, country, grid square)
-- **Station Information**: Default equipment and antenna configurations
-
-#### Personalization Options
-- **Display Name**: How your name appears in the app
-- **Profile Picture**: Optional photo or avatar
-- **Signature**: Automatic signature for exports and sharing
-- **Time Zone**: Local time zone for accurate logging
-- **Units Preference**: Metric vs. Imperial units
 
 #### Fox Hunt Integration
 - **Progress Tracking**: View your Fox Hunt Easter Egg completion status
 - **Achievement History**: Record of found easter eggs and completion dates
 - **Restart Capability**: Reset Fox Hunt progress if desired
 - **Special Recognition**: Displays if you've completed all 10 Fox Hunt Easter Eggs
-
-#### Privacy Controls
-- **Data Sharing**: Control what information is shared
-- **Anonymous Usage**: Option for anonymous analytics
-- **Contact Visibility**: Manage how your information appears to others
-- **Export Permissions**: Control what data can be exported
 
 ## News & Updates
 

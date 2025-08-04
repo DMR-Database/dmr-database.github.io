@@ -17,13 +17,15 @@ title: DMR User Database App
 7. [Logbook System](#logbook-system)
 8. [Fox Hunt Game](#fox-hunt-game)
 9. [Settings & Customization](#settings--customization)
-10. [News & Updates](#news--updates)
-11. [Contact & Information](#contact--information)
-12. [Export & Data Management](#export--data-management)
-13. [Advanced Features](#advanced-features)
-14. [Platform-Specific Features](#platform-specific-features)
-15. [Troubleshooting](#troubleshooting)
-16. [Developer Information](#developer-information)
+10. [User Settings & Profile Management](#user-settings--profile-management)
+11. [App Information Screen](#app-information-screen)
+12. [News & Updates](#news--updates)
+13. [Contact & Information](#contact--information)
+14. [Export & Data Management](#export--data-management)
+15. [Advanced Features](#advanced-features)
+16. [Platform-Specific Features](#platform-specific-features)
+17. [Troubleshooting](#troubleshooting)
+18. [Developer Information](#developer-information)
 
 ## Introduction
 
@@ -142,6 +144,45 @@ The app uses a bottom navigation bar with six main sections:
 - **Support Resources**: Help and documentation links
 - **Community Links**: Amateur radio related websites
 - **Privacy Policy**: Data handling and privacy information
+
+### Additional Screens & Features
+
+#### Privacy Screen
+- **Privacy Policy Display**: Complete privacy policy and data handling information
+- **Data Usage Information**: How your data is collected, stored, and used
+- **Third-Party Services**: Information about external integrations (QRZ.com, etc.)
+- **User Rights**: Your rights regarding personal data
+
+#### Testers Screen  
+- **Beta Tester Credits**: Recognition for community contributors who helped test the app
+- **Contributor Acknowledgments**: Special thanks to users who provided feedback
+- **Testing History**: Information about beta testing phases
+- **Community Recognition**: Hall of fame for dedicated testers
+
+#### Contact Options
+The contact system includes multiple specialized screens:
+
+##### Online Contact Screen
+- **Web-Based Support**: Online contact forms and support channels
+- **Social Media Links**: Connect via various social platforms
+- **Community Forums**: Links to amateur radio discussion groups
+- **Bug Reporting**: Direct channels for reporting issues
+
+##### Phone Contact Screen
+- **Voice Contact Options**: Phone numbers for direct contact when available
+- **Emergency Contacts**: Important contact information for urgent issues
+- **Regional Support**: Location-specific contact information
+
+#### Link Management
+##### External Links Configuration
+- **BrandMeister Network**: Direct integration with https://hose.brandmeister.network/
+- **Custom URL Settings**: Configure additional external links
+- **Quick Access Links**: Frequently used amateur radio resources
+
+##### Links Page
+- **Organized Link Directory**: Categorized list of amateur radio websites
+- **Community Resources**: Links to clubs, nets, and amateur radio organizations
+- **Technical Resources**: Programming software, documentation, and tools
 
 ## Search Functionality
 
@@ -297,33 +338,93 @@ Certain callsigns trigger special behaviors:
 
 ## Logbook System
 
-### QSO Management
-The built-in logbook allows you to track your amateur radio contacts:
+The built-in logbook system provides comprehensive QSO (contact) management with multiple specialized screens for different functions.
 
-#### Add QSO Entry
-- **Callsign**: Contact's amateur radio call sign
-- **Date/Time**: Contact date and time (UTC and local)
-- **Frequency**: Operating frequency
-- **Mode**: Operating mode (FM, DMR, NXDN, etc.)
-- **Report**: Signal reports (both sent and received)
-- **Notes**: Additional contact information
-- **Location**: Contact's location if known
+### Logbook Management Screens
 
-#### Edit/Delete QSOs
-- **Modify Entries**: Update any field in existing QSOs
-- **Delete Contacts**: Remove QSOs from logbook
-- **Validation**: Ensures data integrity and proper formatting
+#### Main Logbook Screen
+- **Overview Dashboard**: Summary of your amateur radio contacts
+- **Quick Statistics**: Total QSOs, recent contacts, and activity summaries
+- **Navigation Hub**: Access to all logbook functions
+- **Search Integration**: Quick search through your contact history
 
-### Export Options
-- **ADIF Format**: Standard amateur radio interchange format (.adi)
-- **CSV Format**: Spreadsheet-compatible export
-- **Sharing**: Email or share logbook data
+#### Logbook List Screen
+- **Contact Display**: Scrollable list of all your QSOs
+- **Sorting Options**: Sort by date, callsign, frequency, mode, etc.
+- **Filter Functions**: Filter contacts by date range, band, mode, or other criteria
+- **Quick Actions**: Edit, delete, or view details for each contact
+- **Batch Operations**: Select multiple contacts for bulk operations
 
-### Logbook Features
-- **Search Functionality**: Find specific contacts
-- **Sorting Options**: Sort by date, callsign, frequency, etc.
-- **Statistics**: Contact counts and summaries
-- **Backup**: Automatic local backup of logbook data
+#### QSO Input Screen (Add New Contact)
+- **Contact Entry Form**: Comprehensive form for new QSO entry
+- **Auto-Completion**: Smart suggestions based on previous contacts
+- **Validation**: Real-time validation of callsigns, frequencies, and other data
+- **Quick Entry**: Streamlined interface for rapid QSO logging during contests
+
+#### Logbook Edit Screen
+- **Contact Modification**: Edit any field in existing QSOs
+- **Data Validation**: Ensures changes maintain data integrity
+- **History Tracking**: Keeps track of modifications
+- **Bulk Editing**: Edit multiple contacts simultaneously when needed
+
+#### Logbook View Screen
+- **Detailed Display**: Complete information view for individual QSOs
+- **Contact History**: Shows all contacts with the same station
+- **QRZ Integration**: Links to QRZ.com profiles when available
+- **Notes and Comments**: Additional information storage for each contact
+
+### QSO Management Features
+
+#### Contact Data Fields
+- **Essential Information**:
+  - Callsign: Contact's amateur radio call sign
+  - Date/Time: Contact date and time (UTC and local time support)
+  - Frequency: Operating frequency with band detection
+  - Mode: Operating mode (FM, DMR, NXDN, SSB, CW, FT8, etc.)
+  - Signal Reports: Both sent and received signal reports (RST format)
+- **Additional Information**:
+  - Name: Operator's name
+  - QTH: Location information (city, state, country)
+  - Grid Square: Maidenhead locator system
+  - Power: Transmitter power levels
+  - Antenna: Antenna information
+  - Weather: Weather conditions during contact
+  - Notes: Free-form notes and comments
+
+#### Advanced Logbook Features
+- **Contest Logging**: Specialized fields for contest operations
+- **Award Tracking**: DXCC, WAS, WAZ, and other amateur radio awards
+- **QSL Management**: QSL card sent/received tracking
+- **Digital Mode Support**: Special fields for digital mode operations
+- **Satellite Operations**: Satellite name, mode, and pass information
+
+### Export and Sharing Options
+
+#### ADIF Export (Amateur Data Interchange Format)
+- **Standard Format**: Industry-standard .adi format
+- **Full Compatibility**: Works with all major logging software
+- **Complete Data**: Exports all QSO fields and custom data
+- **Date Range Selection**: Export specific time periods
+- **Contest Exports**: Specialized contest log formats
+
+#### CSV Export
+- **Spreadsheet Compatible**: Opens in Excel, Google Sheets, etc.
+- **Custom Field Selection**: Choose which fields to include
+- **Multiple Formats**: Different CSV layouts for different purposes
+- **Data Analysis**: Perfect for statistical analysis of contacts
+
+#### Sharing Capabilities
+- **Email Integration**: Send logbook exports via email
+- **Cloud Storage**: Save to Google Drive, iCloud, Dropbox, etc.
+- **Social Sharing**: Share notable contacts on social media
+- **QRZ Upload**: Direct integration with QRZ.com logbook (where supported)
+
+### Logbook Statistics and Analysis
+- **Contact Summaries**: Total contacts by band, mode, year, etc.
+- **Progress Tracking**: Track progress toward awards and achievements
+- **Activity Analysis**: Graphs and charts showing operating patterns
+- **Band Plans**: Visual representation of activity across amateur bands
+- **Geographic Analysis**: Maps showing worked countries and states
 
 ## Settings & Customization
 
@@ -351,6 +452,37 @@ The built-in logbook allows you to track your amateur radio contacts:
 - **Personal settings and preferences**: Customize app behavior
 - **Callsign Storage**: Save your amateur radio callsign for personalization
 - **Advanced Features**: Beta features and developer options access
+
+## User Settings & Profile Management
+
+### Personal Configuration Screen
+The User Settings screen provides comprehensive options for personalizing your app experience:
+
+#### Amateur Radio Profile
+- **Callsign Entry**: Store your amateur radio callsign for personalization
+- **License Class**: Select your amateur radio license level
+- **Operating Preferences**: Set default modes, bands, and power levels
+- **Location Information**: Home QTH (city, state, country, grid square)
+- **Station Information**: Default equipment and antenna configurations
+
+#### Personalization Options
+- **Display Name**: How your name appears in the app
+- **Profile Picture**: Optional photo or avatar
+- **Signature**: Automatic signature for exports and sharing
+- **Time Zone**: Local time zone for accurate logging
+- **Units Preference**: Metric vs. Imperial units
+
+#### Fox Hunt Integration
+- **Progress Tracking**: View your Fox Hunt Easter Egg completion status
+- **Achievement History**: Record of found easter eggs and completion dates
+- **Restart Capability**: Reset Fox Hunt progress if desired
+- **Special Recognition**: Displays if you've completed all 10 Fox Hunt Easter Eggs
+
+#### Privacy Controls
+- **Data Sharing**: Control what information is shared
+- **Anonymous Usage**: Option for anonymous analytics
+- **Contact Visibility**: Manage how your information appears to others
+- **Export Permissions**: Control what data can be exported
 
 ## News & Updates
 
@@ -390,41 +522,106 @@ The contact screen provides:
 - **Credits**: Development team and contributor acknowledgments
 - **Privacy Policy access**: Complete privacy and data handling information
 
+## App Information Screen
+
+The App Information screen provides comprehensive details about your app installation and available updates across different platforms.
+
+### Version Information Display
+- **Local Version**: Shows your currently installed app version and build number
+- **Android Play Store Version**: Latest version available on Google Play Store (Android)
+- **Apple App Store Version**: Latest version available on Apple App Store (iOS/macOS)
+- **GitHub Version**: Development version information from the official repository
+
+### Platform-Specific Changelogs
+The app now displays separate changelogs for different platforms:
+
+#### Android Changelog
+- **Source**: Google Play Store
+- **Display**: Shows latest changes from Android version
+- **Availability**: Visible on Android
+- **Format**: Extracted from Play Store listing using regex pattern matching
+
+#### Apple Changelog  
+- **Source**: Apple App Store
+- **Display**: Shows latest changes from iOS/macOS version
+- **Availability**: Visible on iOS and macOS
+- **Format**: Extracted from App Store listing using HTML parsing
+
+### Database Information
+- **Database Path**: Shows local database file location
+- **Last Database Update**: When the database was last updated from the server
+- **Last Local Download**: When you last downloaded database updates
+
+### Update Detection
+- **Automatic Checking**: App automatically checks for updates on startup
+- **Version Comparison**: Compares local vs. remote versions across platforms
+- **User Notifications**: Alerts when newer versions are available
+- **Direct Links**: Provides update links for each platform
+
 ## Export & Data Management
 
-The app supports exporting data for radio programming in the following formats:
+The app supports comprehensive data export functionality for radio programming and data management. Export capabilities vary by platform, with desktop platforms offering the most complete feature set.
 
-### Anytone Radio Export
+### Radio Programming Exports
+
+#### Anytone Radio Export
 - **Export format**: `userat.csv`
-- **Compatible with**: Anytone DMR radios
+- **Compatible with**: Anytone DMR radios (MD-380, MD-390, MD-UV380, etc.)
+- **Content**: User database with callsigns, DMR IDs, and names
 - **Platform availability**: Desktop only
+- **Use case**: Programming Anytone radios with contact lists
 
-### Fanvil Phone Export
+#### Fanvil Phone Export
 - **Export format**: CSV for Fanvil IP phones
-- **Purpose**: VoIP phone directory programming
+- **Compatible with**: Fanvil VoIP phone systems
+- **Content**: Directory entries with callsigns and VoIP information
 - **Platform availability**: Desktop only
+- **Use case**: Programming IP phone directories for HamVoIP networks
 
-### Grandstream Phone Export
+#### Grandstream Phone Export
 - **Export format**: CSV for Grandstream IP phones
+- **Compatible with**: Grandstream VoIP phone systems
 - **Multiple export options**:
-  - All Dutch users export
-  - All HamVoIP users export
+  - All Dutch users export (Netherlands-specific contacts)
+  - All HamVoIP users export (complete VoIP network directory)
 - **Platform availability**: Desktop only
+- **Use case**: Enterprise and amateur radio VoIP phone programming
 
-### Cisco Phone Export
+#### Cisco Phone Export
 - **Export format**: CSV for Cisco IP phones
-- **Purpose**: Enterprise VoIP phone programming
+- **Compatible with**: Cisco VoIP phone systems
+- **Content**: Enterprise-formatted directory entries
 - **Platform availability**: Desktop only
+- **Use case**: Corporate and amateur radio network phone programming
 
-### Ailunce HD1 Export
+#### Ailunce HD1 Export
 - **Export format**: CSV for Ailunce HD1 radios
-- **Purpose**: DMR handheld radio programming
+- **Compatible with**: Ailunce HD1 DMR handheld radios
+- **Content**: Contact list optimized for HD1 radio format
 - **Platform availability**: Desktop only
+- **Use case**: Programming Ailunce handheld radios
 
-### Tytera MD2017 Export
+#### Tytera MD2017 Export
 - **Export format**: CSV for Tytera MD2017 radios
-- **Purpose**: DMR mobile radio programming
+- **Compatible with**: Tytera MD2017 DMR mobile radios
+- **Content**: Mobile radio contact database
 - **Platform availability**: Desktop only
+- **Use case**: Programming Tytera mobile DMR radios
+
+### Export Selection and Filtering
+
+#### Advanced User Selection
+- **Individual Selection**: Choose specific users from search results
+- **Bulk Selection**: Select all users or none with one click
+- **Filter Options**: Export subsets based on location, database, or other criteria
+- **Country-Specific Exports**: Filter by country or region for localized contact lists
+- **Database-Specific Exports**: Export from individual databases (RadioID, HamVoIP, etc.)
+
+#### Export Process
+- **Real-Time Progress**: Shows export progress with user counts
+- **File Generation**: Creates properly formatted files for each radio/phone type
+- **Validation**: Ensures data integrity and proper formatting
+- **Error Handling**: Reports any issues during export process
 
 ### Export Limitations
 - **Desktop Only**: Export functionality is available on desktop platforms only (Windows, macOS, Linux)
@@ -438,27 +635,47 @@ The app supports exporting data for radio programming in the following formats:
 
 ## Advanced Features
 
-### Database Information
-The info screen displays:
-- **Local database record counts**: Shows number of records for all 7 databases
-- **Server-side database statistics**: Remote database record counts
-- **Database synchronization status**: Comparison between local and server data
-- **Real-time count comparison**: Live updates of database statistics
+### Database Management System
+
+The app includes sophisticated database management tools accessible through multiple specialized screens:
+
+#### Database Information Screen  
+- **Local Database Statistics**: Shows number of records for all 7 databases
+- **Server-Side Comparisons**: Remote database record counts for comparison
+- **Synchronization Status**: Real-time comparison between local and server data
+- **Storage Usage**: Detailed information about database file sizes and storage usage
+- **Update History**: Track when each database was last updated
+
+#### Database Count Screen
+- **Real-Time Counts**: Live display of record counts for each database
+- **Comparison Tables**: Side-by-side local vs. server record counts
+- **Sync Status Indicators**: Visual indicators showing which databases are up-to-date
+- **Database Health**: Indicators for database integrity and performance
+
+#### Database Update Management
+- **Selective Updates**: Choose which databases to update
+- **Progress Monitoring**: Real-time progress bars during database updates
+- **Error Handling**: Detailed error reporting and recovery options
+- **Rollback Capability**: Restore previous database versions if needed
+- **Bandwidth Management**: Control update timing and data usage
 
 ### Supported Database Tables
-- **RadioID users**: DMR radio ID assignments
-- **HamVoIP users**: AllStarLink and VoIP network participants
+The app manages multiple specialized databases:
+
+- **RadioID users**: DMR radio ID assignments worldwide
+- **HamVoIP users**: AllStarLink and VoIP network participants  
 - **DAPNET users**: Digital Amateur Packet Network participants
 - **NXDN users**: NXDN digital radio system users
 - **Repeaters**: Amateur radio repeater information
 - **Ham Shack Hotline entries**: Amateur radio telephone network
+- **Hackerspaces**: Global amateur radio hackerspaces and clubs
 
-### Database Management
-- **Updates**: Manual database update checking
-- **Manual Refresh**: Force database updates in settings
-- **Integrity Verification**: Automatic verification of database integrity
-- **Storage Optimization**: Efficient SQLite storage with indexing
-- **Backup System**: Automatic backup during database updates
+### Database Integrity & Maintenance
+- **Automatic Verification**: Regular integrity checks of local databases
+- **Corruption Detection**: Identifies and reports database issues
+- **Repair Tools**: Built-in database repair and optimization functions
+- **Backup System**: Automatic backup creation during updates
+- **Storage Optimization**: Efficient SQLite indexing and compression
 
 ### QRZ Integration
 - **QRZ Photo Integration**: Automatically fetches operator photos from QRZ.com
@@ -525,6 +742,16 @@ The info screen displays:
 - **Map Loading**: Check internet connection for map tiles
 - **Database Updates**: Ensure stable internet connection
 
+#### App Information Issues
+- **Version Mismatch**: Check App Information screen for latest versions across platforms
+- **Changelog Not Loading**: Verify internet connection for store information
+- **Update Notifications**: Enable notifications in device settings
+
+#### Logbook Problems
+- **QSO Not Saving**: Check all required fields are completed
+- **Export Failures**: Ensure sufficient storage space and file permissions
+- **ADIF Compatibility**: Verify export format matches your logging software requirements
+
 ### Getting Help
 - **Contact Developer**: Use contact screen to reach PD2EMC
 - **Community Support**: Join amateur radio forums for help
@@ -541,8 +768,9 @@ The info screen displays:
 - **Framework**: Flutter (Cross-platform development)
 - **Database**: SQLite (mobile/desktop), Sembast (web)
 - **Version**: 1.0.20250802+157
-- **Build**: 157
+- **Build**: 157  
 - **Release Date**: August 2, 2025
+- **Latest Features**: Separate Android and Apple changelog displays, enhanced version comparison across platforms
 
 ### Data Sources
 - **Primary Database**: GitHub repository (https://github.com/DMR-Database/dmr-database-appdata)
@@ -567,36 +795,6 @@ The info screen displays:
 ---
 
 *This manual is based on app version 1.0.20250802+157 and covers only the features actually implemented in the codebase. All features described have been verified to exist in the actual application code.*
-
-## Contact & Support
-The contact screen provides:
-- Online contact options
-- Privacy policy access
-- App information and version details
-- Tester credits and acknowledgments
-- Social sharing capabilities
-
-## Settings
-The settings screen includes:
-
-### Theme Selection
-- Light theme
-- Dark theme  
-- Auto (system-based) theme switching
-- Gradient background options
-
-### Language Selection
-- Choose from 8 supported languages
-- Automatic language detection
-- Manual language override
-
-### External Links
-- **BrandMeister Network**: Direct link to https://hose.brandmeister.network/
-- External link integration for DMR network access
-
-### Feature Toggles
-- Various app feature enable/disable options
-- User preference management
 
 ## Fox Hunt Game
 
@@ -746,44 +944,6 @@ When searching for these special callsigns, look for the **award icon** instead 
 - **Icon Recognition**: Look for special award icons, not regular icons
 - **Exact Callsigns**: Use exact spelling: "PD2EMC", "PI2ASD", "PD1HPB"
 
-## Themes
-The app supports multiple visual themes:
-
-### Light Theme
-- Bright color scheme optimized for daylight use
-- High contrast for outdoor visibility
-
-### Dark Theme  
-- Dark color scheme optimized for low-light conditions
-- Reduced eye strain in dark environments
-
-### Auto Theme
-- Automatically switches between light and dark based on system settings
-- Seamless theme transitions
-
-### Gradient Backgrounds
-- Dynamic gradient backgrounds for enhanced visual appeal
-- Theme-appropriate color schemes
-
-## Technical Notes
-
-### Database Storage
-- **Mobile/Desktop**: SQLite database engine
-- **Web Platform**: Sembast database for web compatibility
-- Automatic database updates from remote sources
-
-### Network Features
-- Automatic database synchronization
-- News feed updates
-- Real-time server count comparisons
-- Offline functionality with cached data
-
-### Platform-Specific Features
-- Desktop: Full export functionality
-- Mobile: Optimized touch interface
-- Web: Browser-based database storage
-- Cross-platform data synchronization
-
 ---
 
-*This manual is based on app version 1.0.20250802+157*
+*This manual is based on app version 1.0.20250802+157 and covers only the features actually implemented in the codebase. All features described have been verified to exist in the actual application code.*

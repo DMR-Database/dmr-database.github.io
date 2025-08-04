@@ -42,17 +42,17 @@ This app serves as a unified platform for amateur radio operators to:
 ### Platform Support
 The app runs on:
 - **Android** - Full functionality via Google Play Store
-- **iOS** - Full functionality via Apple App Store  
+- **iOS** - Full functionality via Apple App Store  (not yet)
+- **macOS** - Full functionality via Apple App Store
 - **Windows** - Desktop application with full features
-- **macOS** - Native macOS application
-- **Linux** - Linux desktop support
-- **Web** - Browser-based version with adapted database engine
+- **Linux** - Linux desktop support (not yet)
+- **Web** - Browser-based version with adapted database engine (not yet)
 
 ### Key Benefits
 - **Offline-First Design**: Full functionality without internet connection
 - **Cross-Platform Synchronization**: Same experience across all devices
 - **Multi-Language Support**: Available in 8 languages
-- **Regular Database Updates**: Automatic synchronization with latest data
+- **Regular Database Updates**: Download latest Database thru App
 - **Amateur Radio Integration**: Direct links to QRZ.com and other services
 - **Gamification**: Fox Hunt system encourages exploration
 - **Professional Export Tools**: Generate files for radio programming software
@@ -81,8 +81,8 @@ When you first open the app:
 ### System Requirements
 - **Android**: 6.0+ (API level 21+)
 - **iOS**: 12.0+
-- **Windows**: Windows 10+
 - **macOS**: macOS 10.14+
+- **Windows**: Windows 10+
 - **Linux**: Ubuntu 18.04+ or equivalent
 - **Web**: Modern browser with WebAssembly support
 - **Storage**: 100MB+ free space for databases
@@ -136,7 +136,6 @@ The app uses a bottom navigation bar with six main sections:
 - **Theme Selection**: Light, Dark, and Auto modes
 - **Language Options**: 8 supported languages
 - **Advanced Features**: Beta features and developer options
-- **Fox Hunt Progress**: Track completion status of all 10 Fox Hunt Easter Eggs
 
 ### 6. Contact/Information Screen
 - **Developer Contact**: Multiple ways to reach PD2EMC
@@ -144,6 +143,7 @@ The app uses a bottom navigation bar with six main sections:
 - **Support Resources**: Help and documentation links
 - **Community Links**: Amateur radio related websites
 - **Privacy Policy**: Data handling and privacy information
+- **Fox Hunt Progress**: Track completion status of all 10 Fox Hunt Easter Eggs
 
 ### Additional Screens & Features
 
@@ -316,7 +316,7 @@ Certain callsigns trigger special behaviors:
   - Coverage area indicators where available
 
 #### 3. Hackerspaces Map
-- **Content**: Global amateur radio hackerspaces and clubs
+- **Content**: Global Hackerspaces and clubs
 - **Features**:
   - Location markers for hackerspaces
   - Community gathering points

@@ -635,11 +635,8 @@ The app includes sophisticated database management tools accessible through mult
 - **Database Health**: Indicators for database integrity and performance
 
 #### Database Update Management
-- **Selective Updates**: Choose which databases to update
 - **Progress Monitoring**: Real-time progress bars during database updates
 - **Error Handling**: Detailed error reporting and recovery options
-- **Rollback Capability**: Restore previous database versions if needed
-- **Bandwidth Management**: Control update timing and data usage
 
 ### Supported Database Tables
 The app manages multiple specialized databases:
@@ -670,7 +667,6 @@ The app manages multiple specialized databases:
 - **Optimized touch interface**: Designed for finger navigation
 - **Share functionality**: System-level sharing for results
 - **Notification support**: App update notifications
-- **Background updates**: Database synchronization when app is backgrounded
 
 ### Desktop Platforms (Windows/macOS/Linux)
 - **Full export functionality**: Complete file export capabilities
@@ -689,7 +685,6 @@ The app manages multiple specialized databases:
   - Mobile/Desktop: SQLite database engine
   - Web Platform: Sembast database for web compatibility
 - **Network Features**:
-  - Automatic database synchronization
   - News feed updates
   - Real-time server count comparisons
   - Offline functionality with cached data

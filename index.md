@@ -53,14 +53,8 @@ Download the DMR User Database app today and keep the global DMR community acces
 
 <a href="https://apps.apple.com/us/app/dmr-user-database/id6749166551" target="_blank">
   <img src="https://raw.githubusercontent.com/DMR-Database/.github/refs/heads/main/mac-store.png"
-       alt="Download macOS version from App Store"
-       title="Download macOS version from App Store"
-       style="width:240px;height:80px;">
-</a>
-<a href="https://apps.apple.com/us/app/dmr-user-database/id6749166551" target="_blank">
-  <img src="https://raw.githubusercontent.com/DMR-Database/.github/refs/heads/main/ios-store.png"
-       alt="Download iOS version from App Store"
-       title="Download iOS version from App Store"
+       alt="Download iOS/macOS version from App Store"
+       title="Download iOS/macOS version from App Store"
        style="width:240px;height:80px;">
 </a>
 

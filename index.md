@@ -83,7 +83,10 @@ Download the DMR User Database app today and keep the global DMR community acces
 
 ## Promo Video
 
-<video src="https://github.com/DMR-Database/.github/raw/refs/heads/main/dmr%20user%20database%20-%20macos.mp4" controls="controls" width="600">
+<video src="https://github.com/DMR-Database/.github/raw/refs/heads/main/dmr%20user%20database%20-%20ios.mp4" controls="controls" width="300">
+  Your browser does not support the video tag.
+</video>
+<video src="https://github.com/DMR-Database/.github/raw/refs/heads/main/dmr%20user%20database%20-%20macos.mp4" controls="controls" width="300">
   Your browser does not support the video tag.
 </video>
 

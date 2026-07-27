@@ -110285,7 +110285,7 @@ case 1:return A.p(q,r)
 case 2:return A.o(o.at(-1),r)}})
 return A.q($async$yk,r)},
 auy(){var s=new A.bM(Date.now(),0,!1),r=A.uX(s),q=A.hF(s)
-if(r===6){if(q>=18&&q<22)return!0}else if(r===7)if(q>=12&&q<20)return!0
+if(r===6){if(q>=18&&q<22)return!0}else if(r===7)if(q>=12&&q<22)return!0
 return!1},
 I(a){var s,r,q=this,p=null,o=A.bv(a,!0,t.A),n=A.m("news_appbar",q.d)
 o.n()

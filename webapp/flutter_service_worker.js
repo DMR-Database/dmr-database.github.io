@@ -4,7 +4,7 @@ const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
 const RESOURCES = {"favicon-16x16.png": "223decb4adccf669729d3990c8a40095",
-"flutter_bootstrap.js": "210895d872ee867e554b41f5b8777837",
+"flutter_bootstrap.js": "5194d60e67053cba083cce0e5244b6ba",
 "version.json": "84ee284e1dface04a55dd0206dd78e42",
 "splash/img/light-2x.png": "ee96fe3a76341755cd1957234d7b633a",
 "splash/img/dark-4x.png": "3edf0c85383db4fc7209eaa10567f9d9",
@@ -33,7 +33,7 @@ const RESOURCES = {"favicon-16x16.png": "223decb4adccf669729d3990c8a40095",
 "icons/Icon-maskable-512.png": "b417bcd542ea6ea7b5a244248f7e5083",
 "icons/Icon-512.png": "f97fb7325c89aba4b32560f27d55f942",
 "apple-touch-icon-precomposed.png": "829ad2aec2acdada14e8feedb34740bc",
-"manifest.json": "9de7fdd0b0c3a75ef18851bd2abeefcd",
+"manifest.json": "0c4f64d26573de12f222fcec90d271f3",
 "radio_database.db": "bcf2a148ee8aed5a59781854f75fbf50",
 "assets/AssetManifest.json": "b37973f2b19bde8023f55dcfacab6af1",
 "assets/NOTICES": "8b58781ab731d8f44dc19ec9edd44e51",

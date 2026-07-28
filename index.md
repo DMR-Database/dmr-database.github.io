@@ -79,12 +79,19 @@ Download the DMR User Database app today and keep the global DMR community acces
        alt="Download macOS version from Google Drive"
        title="Download macOS version from Google Drive"
        style="width:240px;height:80px;">
-</a><br>
+</a>
+
 **Linux/Debian**
+
 <a href="https://drive.google.com/file/d/1tBXd85PrqE1rVg6vfq0aRPlnAI5rANR0/view?usp=drive_link" target="_blank">
-Download Linux (.deb) version from Google Drive
-</a><br>
+  <img src="https://raw.githubusercontent.com/DMR-Database/dmr-database-appdata/refs/heads/main/dl-debian.png"
+       alt="Download Linux (.deb) version from Google Drive"
+       title="Download Linux (.deb) version from Google Drive"
+       style="width:240px;height:80px;">
+</a>
+
 **Webapp**
+
 <a href="https://dmr-database.github.io/webapp/" target="_blank">
 DMR Database Webapp
 </a>

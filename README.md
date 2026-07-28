@@ -1,7 +1,3 @@
----
-layout: default
-title: DMR User Database App
----
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 <p align="center">

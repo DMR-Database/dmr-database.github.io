@@ -1,7 +1,3 @@
----
-layout: default
-title: DMR User Database App
----
 # Changelog
 
 All notable changes to the DMR User Database app are documented here, in plain language, so anyone can see what's been fixed and improved.

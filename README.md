@@ -1,13 +1,16 @@
-
+---
+layout: default
+title: DMR User Database App
+---
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 ## DMR User Database App
 
-[![Windows](https://img.shields.io/badge/Windows-supported-0078D6?logo=windows&logoColor=white)](#download)
-[![macOS](https://img.shields.io/badge/macOS-supported-000000?logo=apple&logoColor=white)](#download)
-[![Linux](https://img.shields.io/badge/Linux-supported-FCC624?logo=linux&logoColor=black)](#download)
-[![Android](https://img.shields.io/badge/Android-supported-3DDC84?logo=android&logoColor=white)](#download)
-[![iOS](https://img.shields.io/badge/iOS-supported-000000?logo=apple&logoColor=white)](#download)
+[![Windows](https://img.shields.io/badge/Windows-supported-0078D6?logo=windows&logoColor=white)](https://drive.google.com/file/d/16FfKLE_m_e2ssGZnG2hyQJ1Zp1qSwUh7/view?usp=sharing)
+[![macOS](https://img.shields.io/badge/macOS-supported-000000?logo=apple&logoColor=white)](https://apps.apple.com/us/app/dmr-user-database/id6749166551?platform=mac)
+[![Linux](https://img.shields.io/badge/Linux-supported-FCC624?logo=linux&logoColor=black)](https://drive.google.com/file/d/1tBXd85PrqE1rVg6vfq0aRPlnAI5rANR0/view?usp=drive_link)
+[![Android](https://img.shields.io/badge/Android-supported-3DDC84?logo=android&logoColor=white)](https://play.google.com/store/apps/developer?id=PD2EMC)
+[![iOS](https://img.shields.io/badge/iOS-supported-000000?logo=apple&logoColor=white)](https://apps.apple.com/us/app/dmr-user-database/id6749166551?platform=iphone)
 [![Web](https://img.shields.io/badge/Web-supported-4285F4?logo=googlechrome&logoColor=white)](https://dmr-database.github.io/webapp/)
 
 [![Version](https://img.shields.io/badge/version-1.0.20260728-orange.svg)](CHANGELOG.md)

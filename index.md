@@ -51,14 +51,13 @@ Download the DMR User Database app today and keep the global DMR community acces
 
 **App Store (iOS/macOS):**
 
-*iOS*
 <a href="https://apps.apple.com/us/app/dmr-user-database/id6749166551?platform=iphone" target="_blank">
   <img src="https://raw.githubusercontent.com/DMR-Database/.github/refs/heads/main/ios-store.png"
        alt="Download iOS version from App Store"
        title="Download iOS version from App Store"
        style="width:240px;height:80px;">
 </a>
-*macOS*
+
 <a href="https://apps.apple.com/us/app/dmr-user-database/id6749166551?platform=mac" target="_blank">
   <img src="https://raw.githubusercontent.com/DMR-Database/.github/refs/heads/main/mac-store.png"
        alt="Download macOS version from App Store"
@@ -68,25 +67,24 @@ Download the DMR User Database app today and keep the global DMR community acces
 
 **Direct Download (Google Drive):**
 
-**Windows**
 <a href="https://drive.google.com/file/d/16FfKLE_m_e2ssGZnG2hyQJ1Zp1qSwUh7/view?usp=sharing" target="_blank">
   <img src="https://raw.githubusercontent.com/DMR-Database/dmr-database-appdata/refs/heads/main/dl-windows.png"
        alt="Download Windows version from Google Drive"
        title="Download Windows version from Google Drive"
        style="width:240px;height:80px;">
 </a>
-*macOS*
+
 <a href="https://drive.google.com/file/d/1cdYUKairqGOvbiEDEWqJF8Z5-yMmZwFb/view?usp=drive_link" target="_blank">
   <img src="https://raw.githubusercontent.com/DMR-Database/dmr-database-appdata/refs/heads/main/dl-macos.png"
        alt="Download macOS version from Google Drive"
        title="Download macOS version from Google Drive"
        style="width:240px;height:80px;">
-</a>
-*Linux/Debian*
+</a><br>
+**Linux/Debian**
 <a href="https://drive.google.com/file/d/1tBXd85PrqE1rVg6vfq0aRPlnAI5rANR0/view?usp=drive_link" target="_blank">
 Download Linux (.deb) version from Google Drive
-</a>
-*Webapp*
+</a><br>
+**Webapp**
 <a href="https://dmr-database.github.io/webapp/" target="_blank">
 DMR Database Webapp
 </a>

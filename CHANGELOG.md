@@ -1,8 +1,12 @@
+---
+layout: default
+title: DMR User Database App
+---
 # Changelog
 
 All notable changes to the DMR User Database app are documented here, in plain language, so anyone can see what's been fixed and improved.
 
-## Version 1.0.20260727 (build 167)
+## Version 1.0.20260728 (build 167)
 
 ### Fixed
 - **The web version's local database didn't actually work at all** — updating, clearing, and searching the database on the web version silently failed every time due to a missing web-compatible file-storage path. Likely the single biggest fix in this release: the web version now genuinely stores and updates its data.

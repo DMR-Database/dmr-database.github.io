@@ -6,6 +6,18 @@ title: DMR User Database App
 
 ## DMR User Database App
 
+[![Windows](https://img.shields.io/badge/Windows-supported-0078D6?logo=windows&logoColor=white)](#download)
+[![macOS](https://img.shields.io/badge/macOS-supported-000000?logo=apple&logoColor=white)](#download)
+[![Linux](https://img.shields.io/badge/Linux-supported-FCC624?logo=linux&logoColor=black)](#download)
+[![Android](https://img.shields.io/badge/Android-supported-3DDC84?logo=android&logoColor=white)](#download)
+[![iOS](https://img.shields.io/badge/iOS-supported-000000?logo=apple&logoColor=white)](#download)
+[![Web](https://img.shields.io/badge/Web-supported-4285F4?logo=googlechrome&logoColor=white)](https://dmr-database.github.io/webapp/)
+
+[![Version](https://img.shields.io/badge/version-1.0.20260728-orange.svg)](CHANGELOG.md)
+[![License](https://img.shields.io/badge/license-Proprietary-lightgrey.svg)](License.txt)
+[![Made with Flutter](https://img.shields.io/badge/Made%20with-Flutter-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
+[![Discord](https://img.shields.io/badge/Discord-Join-5865F2?logo=discord&logoColor=white)](https://discord.gg/bv2SzXxtQy)
+
 As a Digital Mobile Radio (DMR) enthusiast, you understand the importance of having easy access to detailed contact information about other users in the network. The DMR User Database app is designed to provide a comprehensive digital phonebook for the DMR community, making it easier to find Radio IDs, callsigns, and user details in just a few taps.
 
 Developed by PD2EMC, this app is tailored for hamradio operators, offering powerful features that help you connect, communicate, and stay informed in the world of digital radio.

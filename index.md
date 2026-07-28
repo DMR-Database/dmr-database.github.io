@@ -93,7 +93,10 @@ Download the DMR User Database app today and keep the global DMR community acces
 **Webapp**
 
 <a href="https://dmr-database.github.io/webapp/" target="_blank">
-DMR Database Webapp
+  <img src="https://raw.githubusercontent.com/DMR-Database/dmr-database-appdata/refs/heads/main/dl-webapp.png"
+       alt="DMR Database Webapp"
+       title="DMR Database Webapp"
+       style="width:240px;height:80px;">
 </a>
 
 ---
